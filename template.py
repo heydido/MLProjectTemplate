@@ -21,7 +21,7 @@ list_of_files = [
     f"src/{project_name}/entity/__init__.py",
     f"src/{project_name}/pipeline/__init__.py",
     f"src/{project_name}/utils/__init__.py",
-    "templates/index.html"
+    "templates/index.html",
     "requirements.txt",
     "setup.py",
 ]
