@@ -10,7 +10,6 @@ list_of_files = [
     ".github/workflows/.gitkeep",
     "artifacts/.gitkeep",
     "config/.gitkeep",
-    "dataset/.gitkeep",
     "logs/.gitkeep",
     "notebooks/research.ipynb",
     "notebooks/data/.gitkeep",
