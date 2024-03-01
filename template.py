@@ -20,6 +20,8 @@ list_of_files = [
     f"src/{project_name}/entity/__init__.py",
     f"src/{project_name}/pipeline/__init__.py",
     f"src/{project_name}/utils/__init__.py",
+    f"src/{project_name}/exception.py",
+    f"src/{project_name}/logger.py",
     "templates/index.html",
     "requirements.txt",
     "setup.py",
