@@ -7,10 +7,12 @@ logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 project_name = "MLProjectTemplate"
 
 list_of_files = [
+    ".dvc/.gitkeep",
     ".github/workflows/.gitkeep",
     "artifacts/.gitkeep",
     "config/.gitkeep",
     "logs/.gitkeep",
+    "mlruns/.gitkeep",
     "notebooks/research.ipynb",
     "notebooks/data/.gitkeep",
     f"src/{project_name}/__init__.py",
