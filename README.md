@@ -21,15 +21,25 @@ A resuable template for Machine Learning projects
     ```
     dvc add <path to data>
     ```
-3. Add data to a remote storage - the config is written in `.dvc/config` file:
+   
+3. Track the DVC file `your_file_name.dvc` in git:
+    ```
+    git commit -m "Commit message"
+    ```
+4. Add data to a remote storage - the config is written in `.dvc/config` file:
     ```
     dvc remote add -d <remote name> <remote path>
     ```
-4. Reproduce pipeline:
+5. Reproduce pipeline:
    ```
    dvc repro
    ```       
-5. Push data to remote storage:
+6. Push data to remote storage:
     ```
     dvc push
+    ```
+7. Reverting to previous version of data:
+    ```
+    git checkout <commit hash>
+    dvc checkout
     ```
