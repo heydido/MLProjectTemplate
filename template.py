@@ -2,12 +2,12 @@ import os
 from pathlib import Path
 
 import logging
-logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
+logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s')
 
 project_name = "MLProjectTemplate"
 
 list_of_files = [
-    ".dvc/.gitkeep",
+    ".dvc/config",
     ".github/workflows/.gitkeep",
     "artifacts/.gitkeep",
     "config/.gitkeep",
@@ -24,9 +24,18 @@ list_of_files = [
     f"src/{project_name}/utils/__init__.py",
     f"src/{project_name}/exception.py",
     f"src/{project_name}/logger.py",
+    "static/.gitkeep",
     "templates/index.html",
+    "templates/results.html",
+    ".gitignore",
+    "app.py",
+    "Dockerfile",
+    "dvc.yaml",
+    "main.py",
+    "README.md",
     "requirements.txt",
     "setup.py",
+    "setup.sh"
 ]
 
 for a_file in list_of_files:
@@ -42,4 +51,4 @@ for a_file in list_of_files:
             pass
             logging.info(f"Creating empty file: {a_file}")
     else:
-        logging.info(f"{file_name} is already exists")
+        logging.info(f"{file_name} already exists. Skipping creating the file.")
