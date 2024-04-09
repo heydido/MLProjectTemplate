@@ -1,5 +1,5 @@
 # MLProjectTemplate
-A resuable template for Machine Learning projects
+A reusable template for Machine Learning projects
 
 ## Setting Up the Project using this template:
 1. Clone the repository
@@ -11,35 +11,16 @@ A resuable template for Machine Learning projects
     ```
     source activate ./venv
     ``` 
+------------------------------------------------------------------------------------------------------------------------
+## Workflow:
+1. Update config: `config/config.yaml`
+2. Update raw/processed data schema: `raw_schema.yaml/processed_schema.yaml` (if needed)
+3. Update model parameters: `params.yaml` (if needed)
+4. Update the entity: `src/RuralCreditPredictor/entity/config_entity.py`
+5. Update the configuration manager: `src/RuralCreditPredictor/config/configuration.py`
+6. Update the components: `src/RuralCreditPredictor/components`
+7. Update the pipeline: `src/RuralCreditPredictor/pipeline`
+8. Update entrypoint: `main.py`
+9. Update application: `app.py`
 
-## DVC Commands:
-1. In a repository, initialize DVC:
-    ```
-    dvc init
-    ```
-2. Add data to DVC:
-    ```
-    dvc add <path to data>
-    ```
-   
-3. Track the DVC file `your_file_name.dvc` in git:
-    ```
-    git commit -m "Commit message"
-    ```
-4. Add data to a remote storage - the config is written in `.dvc/config` file:
-    ```
-    dvc remote add -d <remote name> <remote path>
-    ```
-5. Reproduce pipeline:
-   ```
-   dvc repro
-   ```       
-6. Push data to remote storage:
-    ```
-    dvc push
-    ```
-7. Reverting to previous version of data:
-    ```
-    git checkout <commit hash>
-    dvc checkout
-    ```
+------------------------------------------------------------------------------------------------------------------------
