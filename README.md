@@ -1,13 +1,17 @@
 # MLProjectTemplate
-A reusable template for Machine Learning projects
+A reusable template with MLOPs frameworks for your Data Science project
 
 ## Setting Up the Project using this template:
-1. Clone the repository
-2. Create a virtual environment using setup.sh:
+1. Click on `Use this template` -> `create a new repository`
+2. Put your repository name and description -> `create repository`
+3. Clone the repository to your local machine 
+4. Rename the project folder `(src/YourProjectName)` to your project name
+5. Update requirements.txt with the required libraries 
+6. Create a virtual environment using setup.sh:
     ```
     bash setup.sh 
     ```
-3. Activate the virtual environment (optional, if not done in step 2)
+7. Activate the virtual environment (optional, if not done in step 6):
     ```
     source activate ./venv
     ``` 
