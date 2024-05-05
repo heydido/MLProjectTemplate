@@ -1,6 +1,7 @@
 # MLProjectTemplate
 A Data Science project template with MLOps frameworks
 
+---
 ## Setting Up the Project using this template:
 1. Click on `Use this template` -> `create a new repository`
 2. Put your repository name and description -> `create repository`
@@ -34,27 +35,27 @@ A Data Science project template with MLOps frameworks
 ---
 ## Project Organization:
 ```
-|── .dvc                                              <- dvc cache, config, remote info
-|── .github                                           <- ci/cd workflows
-|── artifacts                                         <- o/p of pipelines that are needed for execution of next pipelines
-|── config                                            <- configurations for all the components of the project
-|── docs                                              <- documentation of the project src code
-|── logs                                              <- log file generated while running the component/s
-|── mlruns                                            <- MLFlow: all ml experiments and their artifacts 
-|── notebooks                                         <- jupyter-notebooks
-|    |__ data                                         <- sample data to do experiments in the notebook
+|── .dvc                                <- dvc cache, config, remote info
+|── .github                             <- ci/cd workflows
+|── artifacts                           <- o/p of pipelines that are needed for execution of next pipelines
+|── config                              <- configurations for all the components of the project
+|── docs                                <- documentation of the project src code
+|── logs                                <- log file generated while running the component/s
+|── mlruns                              <- MLFlow: all ml experiments and their artifacts 
+|── notebooks                           <- jupyter-notebooks
+|    |__ data                           <- sample data to do experiments in the notebook
 |
-|── references                                        <- quick reference for the project. e.g. research papers
-|── reports                                           <- reports generated in the project life-cycle
+|── references                          <- quick reference for the project. e.g. research papers
+|── reports                             <- reports generated in the project life-cycle
 |	|__ figures
 |
-|── scripts                                           <- shell scripts to invoke operations from the command line. e.g. run all tests
+|── scripts                             <- shell scripts to invoke operations from the command line. e.g. run all tests
 |── src
 |    |__ ProjectName
 |        |── __init__.py
-|        |── logger.py                                <- A custom logger to stream logs in a terminal/log in file
-|        |── exception.py 							  <- A custom exception handler for the project
-|        |── components                               <- components of the ml pipeline
+|        |── logger.py                  <- A custom logger to stream logs in a terminal/log in file
+|        |── exception.py               <- A custom exception handler for the project
+|        |── components                 <- components of the ml pipeline
 |        |    |── __init__.py
 |        |    |── data_ingestion.py
 |        |    |── data_valaidation.py
@@ -64,19 +65,19 @@ A Data Science project template with MLOps frameworks
 |        |    |── model_evaluation.py
 |        |    |__ prediction.py
 |        |    
-|        |── config                                   <- configuration for the component
+|        |── config                     <- configuration for the component
 |        |    |── configration.py
 |        |    |__ __init__.py
 |		 |
-|        |── constants                                <- constants used in the project
+|        |── constants                  <- constants used in the project
 |        |    |── __init__.py
 |        |        |── PROJECT_ROOT
 |        |
-|        |── entity                                   < datasclass for each component
+|        |── entity                     < datasclass for each component
 |        |    |── __init__.py
 |        |    |__ config_entity.py
 |        |
-|        |── pipeline                                 <- all steps in the pipeline
+|        |── pipeline                   <- all steps in the pipeline
 |        |    |── __init__.py
 |        |    |── data_ingestion.py
 |        |    |── data_valaidation.py
@@ -86,31 +87,31 @@ A Data Science project template with MLOps frameworks
 |        |    |── model_evaluation.py
 |        |    |__ predict.py
 |        |   
-|        |── utils                                    <- all utilities used in the project
+|        |── utils                      <- all utilities used in the project
 |             |── __init__.py
-|             |__ common.py							  <- common utilities for the project
+|             |__ common.py	        <- common utilities for the project
 |
-|── static                                            <- assets/CSS/JS
-|── templates                                         <- HTML
+|── static                              <- assets/CSS/JS
+|── templates                           <- HTML
 |    |── index.html
 |    |__ results.html
 |
-|── tests                                             <- tests for the project
+|── tests                               <- tests for the project
 |    |── unit
 |    |__ integration
 |
 |── .dvcignore
 |── .gitignore
-|── app.py                                            <- expose application via API
-|── DockerFile                                        <- containerize the application
-|── dvc.yaml                                          <- DVC pipeline
+|── app.py                              <- expose application via API
+|── DockerFile                          <- containerize the application
+|── dvc.yaml                            <- DVC pipeline
 |── LICENSE
-|── main.py                                           <- entry point for the project
+|── main.py                             <- entry point for the project
 |── README.md
 |── requirements.txt
-|── setup.py                                          <- package project 
-|── setup.sh                                          <- initial setup for the project
-|__ template.py                                       <- creates empty files/folders 
+|── setup.py                            <- package project 
+|── setup.sh                            <- initial setup for the project
+|__ template.py                         <- creates empty files/folders 
 ```
 ---
 
