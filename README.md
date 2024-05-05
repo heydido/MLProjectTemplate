@@ -19,7 +19,7 @@ A Data Science project template with MLOps frameworks
     ```
     source activate ./venv
     ``` 
-────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+----
 ## Workflow:
 1. Update config: `config/config.yaml`
 2. Update raw/processed data schema: `raw_schema.yaml/processed_schema.yaml` (if needed)
@@ -31,8 +31,8 @@ A Data Science project template with MLOps frameworks
 8. Update entry point: `main.py`
 9. Update application: `app.py`
 
-────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-## Project Organization
+---
+## Project Organization:
 ```
 |── .dvc                                              <- dvc cache, config, remote info
 |── .github                                           <- ci/cd workflows
@@ -112,6 +112,8 @@ A Data Science project template with MLOps frameworks
 |── setup.sh                                          <- initial setup for the project
 |__ template.py                                       <- creates empty files/folders 
 ```
-------------------------------------------------------------------------------------------------------------------------
+---
+
 Owner: [Aashish Kumar](https://www.linktr.ee/heydido)
-------------------------------------------------------------------------------------------------------------------------
+
+---
