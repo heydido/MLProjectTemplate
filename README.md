@@ -37,7 +37,7 @@ A Data Science project template with MLOps frameworks
 ```
 |── .dvc                                <- dvc cache, config, remote info
 |── .github                             <- ci/cd workflows
-|── artifacts                           <- o/p of pipelines that are needed for execution of next pipelines
+|── artifacts                           <- o/p of pipe that are needed for execution of next pipeline
 |── config                              <- configurations for all the components of the project
 |── docs                                <- documentation of the project src code
 |── logs                                <- log file generated while running the component/s
@@ -49,7 +49,7 @@ A Data Science project template with MLOps frameworks
 |── reports                             <- reports generated in the project life-cycle
 |	|__ figures
 |
-|── scripts                             <- shell scripts to invoke operations from the command line. e.g. run all tests
+|── scripts                             <- shell scripts to invoke operations from the command line
 |── src
 |    |__ ProjectName
 |        |── __init__.py
