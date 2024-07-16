@@ -4,7 +4,7 @@ from pathlib import Path
 import logging
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s')
 
-project_name = "MLProjectTemplate"
+project_name = "project_name"
 
 list_of_files = [
     ".dvc/config",
@@ -12,6 +12,7 @@ list_of_files = [
     "artifacts/.gitkeep",
     "config/.gitkeep",
     "docs/.gitkeep",
+    "flowcharts/.gitkeep",
     "logs/.gitkeep",
     "mlruns/.gitkeep",
     "notebooks/research.ipynb",
@@ -30,7 +31,7 @@ list_of_files = [
     f"src/{project_name}/utils/__init__.py",
     f"src/{project_name}/exception.py",
     f"src/{project_name}/logger.py",
-    "static/.gitkeep",
+    "static/assets/img/.gitkeep",
     "templates/index.html",
     "templates/results.html",
     "tests/unit/.gitkeep",

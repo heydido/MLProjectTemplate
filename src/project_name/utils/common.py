@@ -1,8 +1,8 @@
 import sys
 from functools import wraps
 
-from src.MLProjectTemplate.logger import logging
-from src.MLProjectTemplate.exception import CustomException
+from src.project_name.logger import logging
+from src.project_name.exception import CustomException
 
 
 def exception_handler(func: callable) -> callable:

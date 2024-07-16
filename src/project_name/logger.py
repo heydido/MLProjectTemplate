@@ -1,7 +1,7 @@
 import os
 import logging
 from datetime import datetime
-from src.MLProjectTemplate.constants import PROJECT_ROOT
+from src.project_name.constants import PROJECT_ROOT
 
 
 TODAY = datetime.now().strftime('%Y-%m-%d')

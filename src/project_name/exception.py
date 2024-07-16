@@ -3,7 +3,7 @@ import traceback
 
 from typing import Any
 
-from src.MLProjectTemplate.logger import logging
+from src.project_name.logger import logging
 
 
 def error_message_detail(error: Any, error_detail: sys) -> str:
