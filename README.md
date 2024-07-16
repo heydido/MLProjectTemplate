@@ -8,7 +8,7 @@ A Data Science project template with MLOps frameworks
 3. Clone the repository to your local machine 
 4. Rename/Update:
    1. `template.py`: update the project name and add more files/folders [Optional]
-   2. the project folder `(src/MLProjectTemplate)` to `(src/YourProjectName)`
+   2. the project folder `(src/project_name)` to `(src/YourProjectName)`
    3. README
    4. `requirements.txt` with your project dependencies
    5. `setup.py` with your/your project details
@@ -23,14 +23,12 @@ A Data Science project template with MLOps frameworks
 ----
 ## Workflow:
 1. Update config: `config/config.yaml`
-2. Update raw/processed data schema: `raw_schema.yaml/processed_schema.yaml` (if needed)
-3. Update model parameters: `params.yaml` (if needed)
-4. Update the entity: `src/MlProjectTemplate/entity/config_entity.py`
-5. Update the configuration manager: `src/MlProjectTemplate/config/configuration.py`
-6. Update the components: `src/MlProjectTemplate/components`
-7. Update the pipeline: `src/MlProjectTemplate/pipeline`
-8. Update entry point: `main.py`
-9. Update application: `app.py`
+2. Update the entity: `src/project_name/entity/config_entity.py`
+3. Update the configuration manager: `src/project_name/config/configuration.py`
+4. Update the components: `src/project_name/components`
+5. Update the pipeline: `src/project_name/pipeline`
+6. Update entry point: `main.py`
+7. Update application: `app.py`
 
 ---
 ## Project Organization:
@@ -40,6 +38,7 @@ A Data Science project template with MLOps frameworks
 |── artifacts                           <- o/p of pipe that are needed for execution of next pipeline
 |── config                              <- configurations for all the components of the project
 |── docs                                <- documentation of the project src code
+|── flowcharts                          <- flowcharts of the project components, overall, etc.
 |── logs                                <- log file generated while running the component/s
 |── mlruns                              <- MLFlow: all ml experiments and their artifacts 
 |── notebooks                           <- jupyter-notebooks
@@ -92,6 +91,8 @@ A Data Science project template with MLOps frameworks
 |             |__ common.py	        <- common utilities for the project
 |
 |── static                              <- assets/CSS/JS
+     |── assets
+         |── img
 |── templates                           <- HTML
 |    |── index.html
 |    |__ results.html
