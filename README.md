@@ -67,7 +67,7 @@ A Data Science project template with MLOps frameworks
 |        |── config                     <- configuration for the component
 |        |    |── configration.py
 |        |    |__ __init__.py
-|		 |
+|        |
 |        |── constants                  <- constants used in the project
 |        |    |── __init__.py
 |        |        |── PROJECT_ROOT
