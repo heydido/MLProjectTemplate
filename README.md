@@ -92,7 +92,7 @@ A Data Science project template with MLOps frameworks
 |
 |── static                              <- assets/CSS/JS
 |     |── assets
-|         |── img
+|         |__ img
 |
 |── templates                           <- HTML
 |    |── index.html
