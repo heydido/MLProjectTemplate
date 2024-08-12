@@ -46,9 +46,12 @@ A Data Science project template with MLOps frameworks
 |
 |── references                          <- quick reference for the project. e.g. research papers
 |── reports                             <- reports generated in the project life-cycle
-|	|__ figures
+|	|__ figures                         
 |
 |── scripts                             <- shell scripts to invoke operations from the command line
+|   |── setup.sh                        <- initial setup of the project
+|   |__ test.sh                         <- run tests
+|
 |── src
 |    |__ ProjectName
 |        |── __init__.py
@@ -112,7 +115,6 @@ A Data Science project template with MLOps frameworks
 |── README.md
 |── requirements.txt
 |── setup.py                            <- package project 
-|── setup.sh                            <- initial setup for the project
 |__ template.py                         <- creates empty files/folders 
 ```
 ---
