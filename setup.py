@@ -1,9 +1,14 @@
-from setuptools import find_packages, setup
 from typing import List
+from setuptools import find_packages, setup
 
 
-with open("README.md", "r", encoding="utf-8") as long_desc_file:
-    long_description = long_desc_file.read()
+try:
+    with open("README.md", "r", encoding="utf-8") as long_desc_file:
+        long_description = long_desc_file.read()
+except FileNotFoundError as e:
+    print(f"File not found: README.md")
+    raise e
+
 
 HYPHEN_E_DOT = '-e .'
 
@@ -18,13 +23,18 @@ def get_requirements(file_path: str) -> List[str]:
     """
     This function will return the list of requirements.
     """
-    with open(file_path) as req_file:
-        requirements = req_file.readlines()
-        requirements = [req.replace('\n', "") for req in requirements]
+    try:
+        with open(file_path) as req_file:
+            requirements = req_file.readlines()
+            requirements = [req.replace('\n', "") for req in requirements]
 
-        if HYPHEN_E_DOT in requirements:
-            requirements.remove(HYPHEN_E_DOT)
-    return requirements
+            if HYPHEN_E_DOT in requirements:
+                requirements.remove(HYPHEN_E_DOT)
+        return requirements
+
+    except FileNotFoundError as error:
+        print(f"File not found: {file_path}")
+        raise error
 
 
 setup(
