@@ -32,6 +32,9 @@ list_of_files = [
     f"src/{project_name}/exception.py",
     f"src/{project_name}/logger.py",
     "static/assets/img/.gitkeep",
+    "static/css/.gitkeep",
+    "static/css2/.gitkeep",
+    "static/js/.gitkeep",
     "templates/index.html",
     "templates/results.html",
     "tests/unit/.gitkeep",
@@ -43,8 +46,7 @@ list_of_files = [
     "main.py",
     "README.md",
     "requirements.txt",
-    "setup.py",
-    "setup.sh"
+    "setup.py"
 ]
 
 for a_file in list_of_files:
