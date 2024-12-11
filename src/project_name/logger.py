@@ -5,7 +5,8 @@ from src.project_name.constants import PROJECT_ROOT
 
 
 TODAY = datetime.now().strftime('%Y-%m-%d')
-LOG_FILE = f"{datetime.now().strftime('%Y_%m_%d_%H_%M_%S')}.log"
+LOG_FILE = f"{datetime.now().strftime('%Y%m%d_%H%M%S')}.log"
+
 logs_path = os.path.join(PROJECT_ROOT, "logs", TODAY)
 os.makedirs(logs_path, exist_ok=True)
 
@@ -24,9 +25,14 @@ stream_handler.setFormatter(formatter)
 
 # Get root logger
 logger = logging.getLogger()
-logger.setLevel(logging.INFO)
-logger.addHandler(file_handler)
-logger.addHandler(stream_handler)
+
+# Set logger level
+logger.setLevel(logging.DEBUG)
+
+# Add handlers to the logger
+if not logger.handlers:
+    logger.addHandler(file_handler)
+    logger.addHandler(stream_handler)
 
 
 if __name__ == '__main__':
