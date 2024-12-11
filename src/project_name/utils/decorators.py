@@ -1,5 +1,8 @@
 import sys
+import time
+
 from functools import wraps
+from time import perf_counter
 
 from src.project_name.logger import logging
 from src.project_name.exception import CustomException
@@ -43,6 +46,29 @@ def log_handler(func: callable) -> callable:
         result = func(*args, **kwargs)
         logging.info(f"Function '{func.__name__}' executed successfully!")
         return result
+    return wrapper
+
+
+def get_time(func: callable) -> callable:
+    """
+    This function is used to calculate the time taken by the function to execute.
+    To be used as a decorator.
+
+    Args:
+        func: Function to be wrapped.
+
+    Returns:
+        callable: Wrapped function.
+    """
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        start_time = perf_counter()
+
+        func(*args, **kwargs)
+
+        end_time = perf_counter()
+
+        logging.info(f"Function '{func.__name__}' took {round(end_time - start_time, 2)} seconds to execute.")
     return wrapper
 
 
