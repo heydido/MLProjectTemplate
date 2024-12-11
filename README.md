@@ -93,9 +93,12 @@ A Data Science project template with MLOps frameworks
 |             |── __init__.py
 |             |__ common.py	        <- common utilities for the project
 |
-|── static                              <- assets/CSS/JS
+|── static                              <- assets/css/js
 |     |── assets
 |         |__ img
+|     |── css
+|     |── css2
+|     |── js
 |
 |── templates                           <- HTML
 |    |── index.html
