@@ -11,6 +11,7 @@ list_of_files = [
     ".github/workflows/.gitkeep",
     "artifacts/.gitkeep",
     "config/.gitkeep",
+    "dags/.gitkeep",
     "docs/.gitkeep",
     "flowcharts/.gitkeep",
     "logs/.gitkeep",
