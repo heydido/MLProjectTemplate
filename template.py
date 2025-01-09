@@ -1,8 +1,8 @@
+import logging
 import os
 from pathlib import Path
 
-import logging
-logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s')
+logging.basicConfig(level=logging.INFO, format="[%(asctime)s]: %(message)s")
 
 project_name = "project_name"
 
@@ -47,7 +47,7 @@ list_of_files = [
     "main.py",
     "README.md",
     "requirements.txt",
-    "setup.py"
+    "setup.py",
 ]
 
 for a_file in list_of_files:

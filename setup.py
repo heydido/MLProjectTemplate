@@ -1,6 +1,6 @@
 from typing import List
-from setuptools import find_packages, setup
 
+from setuptools import find_packages, setup
 
 try:
     with open("README.md", "r", encoding="utf-8") as long_desc_file:
@@ -10,7 +10,7 @@ except FileNotFoundError as e:
     raise e
 
 
-HYPHEN_E_DOT = '-e .'
+HYPHEN_E_DOT = "-e ."
 
 SRC_REPO = "project-name"
 __version__ = "0.0.0"
@@ -26,7 +26,7 @@ def get_requirements(file_path: str) -> List[str]:
     try:
         with open(file_path) as req_file:
             requirements = req_file.readlines()
-            requirements = [req.replace('\n', "") for req in requirements]
+            requirements = [req.replace("\n", "") for req in requirements]
 
             if HYPHEN_E_DOT in requirements:
                 requirements.remove(HYPHEN_E_DOT)
@@ -51,5 +51,5 @@ setup(
     },
     package_dir={"": "src"},
     packages=find_packages(where="src"),
-    install_requires=get_requirements(file_path='requirements.txt')
+    install_requires=get_requirements(file_path="requirements.txt"),
 )

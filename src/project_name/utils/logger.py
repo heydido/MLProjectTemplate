@@ -53,8 +53,3 @@ def get_logger(name: Optional[str] = "root") -> logging.Logger:
         logger.addHandler(stream_handler)
 
     return logger
-
-
-if __name__ == "__main__":
-    logging = get_logger()
-    logging.info("Logging has started!")

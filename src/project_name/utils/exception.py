@@ -60,11 +60,3 @@ class CustomException(Exception):
             str: Error message.
         """
         return self.error_message
-
-
-if __name__ == "__main__":
-    try:
-        a = 1 / 0
-    except Exception as e:
-        logging.error("Divide by zero error! more info below:")
-        raise CustomException(e, sys) from e
