@@ -6,3 +6,7 @@ scikit-learn
 mlflow
 dvc
 dagshub
+isort
+black
+pylint
+flake8
