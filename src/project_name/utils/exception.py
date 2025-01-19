@@ -2,13 +2,12 @@
 This module provides utility functions and classes for handling exceptions and logging error details.
 """
 
-import sys
 import traceback
 from typing import Any
 
 from src.project_name.utils.logger import get_logger
 
-logging = get_logger()
+logging = get_logger(name="project_name")
 
 
 def error_message_detail(error: Any, error_detail: Any) -> str:

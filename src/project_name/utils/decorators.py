@@ -10,7 +10,7 @@ from typing import Callable
 from src.project_name.utils.exception import CustomException
 from src.project_name.utils.logger import get_logger
 
-logging = get_logger()
+logging = get_logger(name="project_name")
 
 
 def exception_handler(func: Callable) -> Callable:
