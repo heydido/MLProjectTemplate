@@ -10,15 +10,14 @@ A Data Science project template with MLOps frameworks
    1. `template.py`: update the project name and add more files/folders [Optional]
    2. the project folder `(src/project_name)` to `(src/YourProjectName)`
    3. README
-   4. `requirements.txt` with your project dependencies
-   5. `setup.py` with your/your project details
-5. Create a virtual environment using setup.sh:
+   4. `pyproject.toml` with your project dependencies
+5. Create a virtual environment using poetry:
     ```
-    bash setup.sh 
+    poetry install
     ```
 6. Activate the virtual environment (optional, if not done in step 6):
     ```
-    source activate ./venv
+    poetry shell
     ``` 
 ----
 ## Workflow:
@@ -49,7 +48,6 @@ A Data Science project template with MLOps frameworks
 |	|__ figures                         
 |
 |── scripts                             <- shell scripts to invoke operations from the command line
-|   |── setup.sh                        <- initial setup of the project
 |   |__ test.sh                         <- run tests
 |
 |── src
@@ -116,11 +114,27 @@ A Data Science project template with MLOps frameworks
 |── LICENSE
 |── main.py                             <- entry point for the project
 |── README.md
-|── requirements.txt
-|── setup.py                            <- package project 
+|── pyproject.toml
 |__ template.py                         <- creates empty files/folders 
 ```
 ---
+## Running Code Formatting, Linting, and Tests
+1. Code Formatting:
+    ```
+    poetry run black .
+    ```
+2. Import Sorting:
+    ```
+    poetry run isort .
+    ```
+3. Linting:
+    ```
+    poetry run flake8 .
+    ```
+4. Running Tests:
+    ```
+    poetry run pytest
+    ```
 
 Owner: [Aashish Kumar](https://www.linktr.ee/heydido)
 
