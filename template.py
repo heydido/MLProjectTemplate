@@ -64,3 +64,6 @@ for a_file in list_of_files:
             logging.info(f"Creating empty file: {a_file}")
     else:
         logging.info(f"{file_name} already exists. Skipping creating the file.")
+
+
+a test
